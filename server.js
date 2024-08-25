@@ -16,7 +16,7 @@ require('./db')
 
 
 app.use(bodyParser.json());
-const allowedOrigins = ['http://localhost:3000','http://localhost:3001', 'http://localhost:5173']; // Add more origins as needed
+const allowedOrigins = ['https://movie-ticket-booking-admin.vercel.app', 'http://localhost:5173']; // Add more origins as needed
 app.use(
     cors({
         origin: function (origin, callback) {
