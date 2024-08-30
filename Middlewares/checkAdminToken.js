@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 
 function checkAdminToken(req, res, next) {
     const adminAuthToken = req.cookies.adminAuthToken;
-    // console.log('adminAuthToken: ', adminAuthToken);
+    console.log('adminAuthToken: ', adminAuthToken);
     if (!adminAuthToken) {
         return res.status(401).json({ message: 'Admin authentication failed: No adminAuthToken provided', ok: false });
     }
